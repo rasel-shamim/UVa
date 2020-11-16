@@ -4,17 +4,17 @@ int main()
 {
 	int n,i;
 	scanf("%d",&n);
-	int arr[n];
-	for(int i=0;i<n;i++){
+	int arr[n],i,j;
+	for(i=0;i<n;i++){
 		scanf("%d",&arr[i]);
 		
 	}
 	int x,temp;
 	scanf("%d",&x);
-	for(int i=0;i<x;i++){
+	for(i=0;i<x;i++){
 		scanf("%d",&temp);
 		int res=0;
-		for(int j=n-1;j>=0;j--){
+		for(j=n-1;j>=0;j--){
 			if(arr[j]<temp){
 				res = arr[j];
 				break;
@@ -27,7 +27,7 @@ int main()
 			printf("X ");
 		}
 		res = 0;
-		for(int j=0;j<n;j++){
+		for(j=0;j<n;j++){
 			if(arr[j]>temp){
 				res = arr[j];
 				break;
